@@ -1,0 +1,9 @@
+from ClasePila import Pila
+if __name__=="__main__":
+    pila = Pila()
+    numerod = int(input("Ingrese el número a convertir"))
+    numerob = ""
+    while numerod != 0:
+        pila.apilar(numerod%2)
+        numerod=numerod//2
+    print(f"El número en binario es: {pila.mostrar()}")
